@@ -40,21 +40,21 @@ pipeline {
         //     }
         // }
 
-        stage('Build et Push Docker Image') {
-    steps {
-        script {
-            // Construire l'image Docker
-            sh 'docker build -t admin351/events:latest .'
-        }
-    }
-}
-        stage('Push vers DockerHub') {
-    steps {
-        script {
-            sh 'docker push admin351/events:latest'
-        }
-    }
-}
+//         stage('Build et Push Docker Image') {
+//     steps {
+//         script {
+//             // Construire l'image Docker
+//             sh 'docker build -t admin351/events:latest .'
+//         }
+//     }
+// }
+//         stage('Push vers DockerHub') {
+//     steps {
+//         script {
+//             sh 'docker push admin351/events:latest'
+//         }
+//     }
+// }
 
 
         stage('Docker-compose') {
