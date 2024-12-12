@@ -22,14 +22,14 @@ pipeline {
         //     }
         // }
 
-        // stage('Mockito & JUnit test') {
-        //     steps {
-        //        script {
-        //         sh 'mvn test -DskipTests=true'
-        //       }
+        stage('Mockito & JUnit test') {
+            steps {
+               script {
+                sh 'mvn clean'
+              }
                 
-        //     }
-        // }
+            }
+        }
 
         // stage('Nexust') {
         //     steps {
