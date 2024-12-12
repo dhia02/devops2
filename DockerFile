@@ -1,6 +1,4 @@
-FROM openjdk:11
+FROM openjdk:17
 EXPOSE 8089
 ADD /target/events-1.0.jar events
 ENTRYPOINT ["java", "-jar","events"]
-#-->  docker build -t ski-station .
-#-->  docker run -p 8089:8089 ski-station
