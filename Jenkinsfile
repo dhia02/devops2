@@ -44,14 +44,14 @@ pipeline {
     steps {
         script {
             // Construire l'image Docker
-            sh 'docker build -t iheblafi/gestion-station-ski:latest .'
+            sh 'docker build -t admin351/events:latest .'
         }
     }
 }
         stage('Push vers DockerHub') {
     steps {
         script {
-            sh 'docker push iheblafi/gestion-station-ski:latest'
+            sh 'docker push admin351/events:latest'
         }
     }
 }
@@ -67,14 +67,7 @@ pipeline {
         }
 
         
-        // stage('Quality Gate') {
-        //     steps {
-        //        timeout(time: 5, unit: 'MINUTES') {
-        //            waitForQualityGate abortPipeline: true
-        //        }
-                
-        //     }
-        // }
+   
 
     
     }
